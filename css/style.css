@@ -322,3 +322,78 @@ body {
     display: none;
   }
 }
+
+/* Ajustes responsive sin cambiar tu estilo base */
+@media (max-width: 1350px) {
+  .conocenos {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+  }
+
+  .conocenos img {
+    max-width: 100%;
+  }
+
+  .texto-conocenos {
+    max-width: 100%;
+  }
+
+  .servicio {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .servicio-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .servicio-contenido h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .servicio-contenido p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .servicio-sidebar{
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .textos-header h1 {
+    font-size: 48px;
+    -webkit-text-stroke: 2px black;
+  }
+
+  .textos-header h3 {
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
+
+  .nav-menu a {
+    font-size: 16px;
+  }
+
+  .imagenes {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .tarjeta img {
+    height: 180px;
+  }
+}
